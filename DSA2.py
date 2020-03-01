@@ -73,10 +73,6 @@ def modinv(a, m):
         return x % m
 
 '''Key generation'''
-'''
-因為1024bit跟160bit會跑超級久，投影片也說適合用在計算能力很好的電腦，
-所以我改成p是10bit、q是5bit，投影片的範例數字也蠻小的 pdf檔也沒有要求要1024bi。
-'''
 #generate prime q(160bits, 頭尾皆1, 中間158bits為0或1隨機生成)
 q = random_prime_generator(160)
 
